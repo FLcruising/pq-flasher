@@ -14,12 +14,8 @@ patches = {
         (0x0005FFFC, b"Ende", b"\xff\xff\xff\xff"),  # End of FW marker
     ],
     "3501": [
-        (0x0005E669, b"\x4D", b"\x7B"),  # HCA min
-        (0x0005E66A, b"\x72", b"\x8E"),  # HCA mid
-        (0x0005E66B, b"\x9D", b"\xA0"),  # HCA high
-        (0x0005E671, b"\x4D", b"\x7B"),  # HCA min
-        (0x0005E672, b"\x72", b"\x8E"),  # HCA mid
-        (0x0005E673, b"\x9D", b"\xA0"),  # HCA high
+        (0x0005E669, b"\x4D\x72\x9D", b"\x7B\x8E\xA0",  # HCA map 1
+        (0x0005E671, b"\x4D\x72\x9D", b"\x7B\x8E\xA0),  # HCA map 2
         (0x0005FFFC, b"Ende", b"\xff\xff\xff\xff"),  # End of FW marker
     ]
 }
