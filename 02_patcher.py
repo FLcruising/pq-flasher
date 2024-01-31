@@ -14,9 +14,12 @@ patches = {
         (0x0005FFFC, b"Ende", b"\xff\xff\xff\xff"),  # End of FW marker
     ],
     "3501": [
-        (0x0005D828, b"1K0909144R \x003501", b"1K0909144R \x003502"),  # Software number and version
-        (0x0005D289, b"\x64", b"\x00"),  # Disengage countdown
-        (0x0005D2FA, b"\x14", b"\x00"),  # Min speed
+        (0x0005E669, b"\x4D", b"\x7B"),  # HCA min
+        (0x0005E66A, b"\x72", b"\x8E"),  # HCA mid
+        (0x0005E66B, b"\x9D", b"\xA0"),  # HCA high
+        (0x0005E671, b"\x4D", b"\x7B"),  # HCA min
+        (0x0005E672, b"\x72", b"\x8E"),  # HCA mid
+        (0x0005E673, b"\x9D", b"\xA0"),  # HCA high
         (0x0005FFFC, b"Ende", b"\xff\xff\xff\xff"),  # End of FW marker
     ]
 }
